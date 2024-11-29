@@ -5,3 +5,8 @@
 **[下载页面🚀️ ]**：([发行版 · lyxyz5223/VolunteerTimeStatistics](https://github.com/lyxyz5223/VolunteerTimeStatistics/releases/))
 
 **[下载链接🎉️ ]**：[最新版本下载链接](https://github.com/lyxyz5223/VolunteerTimeStatistics/releases/latest)
+
+
+**[演示视频👀️  ]**
+https://github.com/user-attachments/assets/f852b0d2-24d2-4137-93e9-aead4a049404
+
