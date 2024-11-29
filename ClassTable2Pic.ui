@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClassTable2PicClass</class>
+ <widget class="QMainWindow" name="ClassTable2PicClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>422</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ClassTable2Pic</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="0,0,0,0,0">
+    <item row="2" column="0">
+     <widget class="QTextBrowser" name="log"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="start">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>开始统计数据</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QRadioButton" name="selectHeader">
+        <property name="text">
+         <string>选择数据表头</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="selectRange">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="text">
+         <string>选择表格数据范围</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="delimiter_label">
+        <property name="text">
+         <string>输出结果分隔符：</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="delimiter"/>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>合并前两项相同，第三项数字求和</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>结果输出：</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ClassTable2Pic.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>start</sender>
+   <signal>clicked()</signal>
+   <receiver>ClassTable2PicClass</receiver>
+   <slot>solve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>144</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>-2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>solve()</slot>
+ </slots>
+</ui>
